@@ -362,6 +362,7 @@ locals {
     stream_name          = var.stream_name
     region               = data.aws_region.current.name
     initial_position     = var.initial_position
+    max_records          = var.max_records
     transformed_output   = local.s3_path
     compression          = var.transformer_compression
     window_period        = "${var.window_period_min} minutes"

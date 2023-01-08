@@ -18,6 +18,12 @@
     "position": "${initial_position}"
   }
 
+  "retrievalMode": {
+    "type": "Polling"
+    # Maximum size of a batch returned by a call to getRecords.
+    "maxRecords": ${max_records}
+  }
+
   # Path to transformed archive
   "output": {
     # Path to transformed output

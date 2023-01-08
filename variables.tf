@@ -126,6 +126,12 @@ variable "initial_position" {
   type        = string
 }
 
+variable "max_records" {
+    description = "The maximum number of records to process per batch"
+    default     = 10000
+    type        = number
+}
+
 variable "s3_bucket_name" {
   description = "The name of the S3 bucket events will be loaded into"
   type        = string
