@@ -37,6 +37,12 @@ variable "max_size" {
   type        = number
 }
 
+variable "autoscaling_group_metrics" {
+  description = "The list of metrics to enable for the autoscaling group"
+  default     = []
+  type        = list(string)
+}
+
 variable "associate_public_ip_address" {
   description = "Whether to assign a public ip address to this instance"
   type        = bool
